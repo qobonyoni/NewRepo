@@ -1,0 +1,28 @@
+function sumAll(arr) {
+//sort the numbers in ascending order,Nyoni
+ let green = arr.sort((a, b) => a - b)
+
+ //Add the two elements
+  let a = green[0] + green[green.length-1];
+let sum =0
+
+//add the numbers in between
+if(green.length>=2){
+  for(let i=green[0]+1;i<green[green.length-1];i++){
+   
+   sum = sum + i
+
+  }
+  }
+
+
+  return sum + a
+
+
+}
+
+
+
+sumAll([1, 4]);
+console.log(sumAll([4,1]))
+console.log(sumAll([10, 5]))
